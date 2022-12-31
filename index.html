@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 03 : Frontend Mentor</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="images/logo.svg" alt="" /></a>
+      <nav class="navigation">
+        <div class="nav-1">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+        </div>
+        <div class="nav-2">
+          <a href="#">Login</a>
+          <button class="signUp-btn">Sign Up</button>
+        </div>
+      </nav>
+      <div class="humberger-icon"></div>
+    </header>
+    <section class="banner">
+      <div class="banner-container">
+        <div class="section-left">
+          <h1 class="main-title">More than just shorter links</h1>
+          <p>
+            Build your brand's recognition and get detailed insights on how your
+            links are performing
+          </p>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+        <div class="section-right">
+          <img src="images/illustration-working.svg" alt="" />
+        </div>
+      </div>
+      <div class="shorten-input">
+        <input type="text" placeholder="Shorten a link here..." />
+        <a href="#" class="shorten-btn">Shorten it!</a>
+      </div>
+    </section>
+    <section class="statistics">
+      <div class="statistic-container">
+        <div class="statistics-title">
+          <h3>Advanced Statistics</h3>
+          <p>
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </div>
+        <div class="statistic-box-container">
+          <div class="statistic-box">
+            <div class="statistic-img">
+              <img src="images/icon-brand-recognition.svg" alt="" />
+            </div>
+            <div class="statistic-details">
+              <h3>Brand Recognition</h3>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don't mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="statistic-box">
+            <div class="statistic-img">
+              <img src="images/icon-detailed-records.svg" alt="" />
+            </div>
+            <div class="statistic-details">
+              <h3>Detailed Records</h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+          </div>
+          <div class="statistic-box">
+            <div class="statistic-img">
+              <img src="images/icon-fully-customizable.svg" alt="" />
+            </div>
+            <div class="statistic-details">
+              <h3>Fully Customizable</h3>
+              <p>
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="booster-band">
+        <h1>Boost your links today</h1>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-main">
+        <a href="#" class="logo"><img src="images/logo.svg" alt="" /></a>
+        <div class="col">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="#">Link Shortening</a></li>
+            <li><a href="#">Branded Links</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Developerss</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="media-icons">
+          <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+          <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+          <a href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+          <a href="#"><img src="images/icon-instagram.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const humbergerIcon = document.querySelector(".humberger-icon");
+      const navigationMenu = document.querySelector(".navigation");
+      humbergerIcon.addEventListener("click", () => {
+        humbergerIcon.classList.toggle("active");
+        navigationMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
